@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Страхование Вас и Ваших близких в поездках</title>
+    <style>
+        body {
+            background-color: #333;
+            margin: 0;
+            position: relative;
+        }
+
+        header {
+            background-color: #333;
+            color: #333;
+            padding: 10px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header img {
+            float: left;
+            margin-right: 10px;
+        }
+
+        header h1 {
+            color: #fff;
+            margin: 0;
+        }
+.banner {
+    background-color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+}
+.nav {
+            background-color: #333;
+            border-radius: 5px;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: flex;
+            font-size: 15px;
+            border-radius: 5px;
+            cursor: pointer;
+}
+.nav ul {
+    list-style-type: none;
+}
+.nav li {
+    display: inline;
+    margin-right: 15px;
+}
+.nav a {
+    background-color: #333;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: #fff;
+    border: 2px #fff;
+    font-size: 15px;
+}
+.nav a:hover {
+    background-color: #333;
+    border: 2px solid #fff;
+}
+        .banner {
+            background-color: #fff;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .left-block {
+            background-color: #fff;
+            float: left;
+            width: 27%;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+
+        .right-block {
+            background-color: #fff;
+            float: right;
+            width: 64%;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+            margin-right: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+            clear: both;
+        }
+
+        .footer-columns {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .footer-column {
+            flex: 1;
+            padding: 20px;
+            text-align: left;
+        }
+
+        .footer-column ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-column ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-column a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        input[type="text"],
+        input[type="date"],
+        textarea,
+        select {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 5px;
+            margin: 5px;
+            width: 20%;
+        }
+
+        .date-range {
+            display: flex;
+            align-items: center;
+        }
+
+        .date-range label,
+        .date-range input {
+            margin: 5px;
+            border-radius: 5px;
+        }
+
+        .transport-options {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .transport-options label {
+            margin: 5px;
+            margin-left: 100px;
+        }
+
+        .transport-options input {
+            margin: 5px;
+            margin-left: 80px;
+        }
+
+        .radio-option {
+            display: flex;
+            align-items: center;
+            margin-left: 80px;
+        }
+
+        .radio-option input {
+            margin-right: 10px;
+            margin-left: 100px;
+        }
+
+        .transport-options label {
+            margin: 5px;
+            margin-left: 0px;
+        }
+
+        .transport-options input {
+            margin: 5px;
+            margin-left: 0;
+        }
+
+        .nav a:nth-child(1),
+        .nav a:nth-child(2),
+        .nav a:nth-child(3) {
+            background-color: #333;
+            border-radius: 5px;
+        }
+
+        .nav a:nth-child(1):hover,
+        .nav a:nth-child(2):hover,
+        .nav a:nth-child(3):hover {
+            background-color: light-blue;
+        }
+
+        input[type="submit"] {
+            background-color: #00bfff;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0073e6;
+        }
+        .button {
+            background-color: #00bfff;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 24px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #0073e6;
+        }
+        .radio-option input {
+            margin-right: 10px;
+        }
+        .radio-option label {
+            display: flex;
+            align-items: center;
+            margin-left: 10px;
+        }
+        button {
+            background-color: #add8e6;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #77a8d9;
+        }
+        .button {
+            background-color: #add8e6;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 24px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #77a8d9;
+        }
+  select#country:hover,
+  input[type="date"]:hover,
+  input[type="radio"]:hover {
+    cursor: pointer;
+  }
+<style>
+    .right-block a {
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    .right-block a:hover {
+        background-color: light-blue;
+    }
+select#selectMenu:hover {
+    cursor: pointer;
+}
+
+.right-block a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.right-block a:hover {
+    background-color: light-blue;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <img src="D:\4130923.jpg" alt="Логотип" width="100" height="100">
+        <h1>Страхование в поездках Вас и Ваших близких</h1>
+        <nav class="nav">
+            <ul>
+                <li><a class="button" href="#">Частным клиентам</a></li>
+                <li><a class="button" href="#">Корпоративным клиентам</a></li>
+                <li><a class="button" href="#">VIP клиентам</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="banner">
+        <img src="C:\Users\vladh\Downloads\photo_2023-10-13_09-16-14.jpg" alt="Баннер" width="100%" height="130">
+        <p>Рассмотрение заявки на страхование путешественников онлайн всего за 3 минуты. Гарантия получения медицинской помощи по всему миру. Страховое покрытие до 100 000 €.</p>
+    </div>
+    <div class="left-block">
+        <h2>Все о страховании:</h2>
+        <div class="steps steps--amount-5">
+                        <div class="steps__item steps__item_active">
+                            <div class="steps__inner">
+                                <div class="steps__indicator">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.177 16.421H13.73a.4.4 0 0 0 .392-.407v-7.74h.393c.158 0 .302-.099.362-.251a.418.418 0 0 0-.085-.444l-2.239-2.324V1.35a.4.4 0 0 0-.392-.407h-1.57a.4.4 0 0 0-.391.407v1.46L7.73.248a.383.383 0 0 0-.555 0L.115 7.58a.418.418 0 0 0-.085.444c.06.152.204.252.363.252h.392v7.739a.4.4 0 0 0 .392.407zm8.237-3.257H5.492V9.09h3.922v4.074z" fill="#CE253D"></path>
+                                    </svg>
+                                </span>
+                            </span>
+                                </div>
+                                <div class="steps__text">➡️ Расчет</div>
+                            </div>
+                        </div>
+
+                        <div class="steps__item ">
+                            <a href="" class="steps__link">
+                                <div class="steps__inner">
+                                    <div class="steps__indicator"></div>
+                                    <div class="steps__text">➡️ Программы</div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="steps__item ">
+                            <a href="" class="steps__link">
+                                <div class="steps__inner">
+                                    <div class="steps__indicator"></div>
+                                    <div class="steps__text">➡️ Тарифы</div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="steps__item ">
+                            <a href="" class="steps__link">
+                                <div class="steps__inner">
+                                    <div class="steps__indicator"></div>
+                                    <div class="steps__text">➡️ Оформление</div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="steps__item ">
+                            <a href="" class="steps__link">
+                                <div class="steps__inner">
+                                    <div class="steps__indicator"></div>
+                                    <div class="steps__text">➡️ Оплата</div>
+                                </div>
+                            </a>
+                        </div>
+ </div>
+        <h2>Зачем нужна страховка в поездках?</h2><br>
+        <iframe width="100%" height="300" src="https://www.youtube.com/embed/plOCJ3Y_rT4" frameborder="0" allowfullscreen></iframe><br>
+        <h2>Что нужно знать о медицинской страховке,</h2><br>
+        <iframe width="100%" height="300" src="https://www.youtube.com/embed/H49hGchx5AE?si=qQkWC4RgEwakXOVI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><br>
+    </div>
+    <div class="right-block">
+        <h2>Данные о поездке</h2>
+        <form>
+            <label for="country">Страна поездки:</label>
+            <select id="country" name="country">
+                <option value="Россия">Россия</option>
+                <option value="США">США</option>
+                <option value="Франция">Франция</option>
+                <option value="Германия">Германия</option>
+                <option value="Италия">Италия</option>
+                <!-- Другие страны -->
+            </select><br><br>
+            <div class="date-range">
+                <label for="startDate">Дата поездки с:</label>
+                <input type="date" id="startDate" name="startDate">
+                <label for="endDate">по:</label>
+                <input type="date" id="endDate" name="endDate">
+            </div>
+            <br><br>
+            <label>Транспорт:</label><br>
+            <div class="transport-options">
+                <div class="radio-option">
+                    <input type="radio" id="plane" name="transport" value="Самолет" cursor: pointer;>
+                    <label for="plane">Самолетом</label>
+                </div>
+                <div class="radio-option">
+                    <input type="radio" id="train" name="transport" value="Поезд">
+                    <label for="train">Поездом</label>
+                </div>
+                <div class="radio-option">
+                    <input type="radio" id="car" name="transport" value="На машине">
+                    <label for="car" class="align-right">На машине</label>
+                </div>
+                <div class="radio-option">
+                    <input type="radio" id="bike" name="transport" value="На велосипеде">
+                    <label for="bike">На велосипеде</label>
+                </div>
+                <div class="radio-option">
+                    <input type="radio" id="walk" name="transport" value="Пешком">
+                    <label for="walk">Пешком</label>
+                </div>
+            </div>
+            <div class="participant-data">
+                <h3>Данные об участниках поездки</h3>
+                <div id="participant1">
+                    <label for="lastName1">Фамилия:</label>
+                    <input type="text" id="lastName1" name="lastName1"><br><br>
+                    <label for="firstName1">Имя:</label>
+                    <input type="text" id="firstName1" name="firstName1"><br><br>
+                    <label for="middleName1">Отчество:</label>
+                    <input type="text" id="middleName1" name="middleName1"><br><br>
+                    <label for="dob1">Дата рождения:</label>
+                    <input type="date" id="dob1" name="dob1"><br><br>
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email"><br><br>
+                    <label for="phone">Телефон:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+7 888 777 88 88"><br><br>
+                </div>
+                <button type="button" onclick="addParticipantBlock()">Добавить члена семьи</button><br><br>
+            </div>
+            <label for="sports">Укажите виды спорта, которыми планируете заниматься:</label>
+            <input type="text" id="sports" name="sports"><br><br>
+            <label for="selectMenu" style="position: relative;">
+               Выберите тариф страховки:
+              <a href="ссылка-на-страницу-о-тарифах" title="Узнать о тарифах" style="position: top; top: 5;">
+             <span style="font-size: 15px; color: blue;"><sup>ℹ️</sup></span>
+             </a>
+             </label>
+            <select id="selectMenu" name="selectMenu">
+                <option value="option1">Базовый</option>
+                <option value="option2">Расширенный</option>
+                <option value="option3">Полный</option>
+            </select><br><br>
+            <input type="checkbox" id="promoCode" name="promoCode">
+            <label for="promoCode">Есть промокод</label><br><br>
+            <input type="submit" value="Отправить заявку">
+        </form>
+    </div>
+    <footer>
+        <div class="footer-columns">
+            <div class="footer-column">
+                <h3>Контакты</h3>
+                <ul>
+                    <li><a href="#">Чат поддержки</a></li>
+                    <li><a href="#">Телефон +888 777 88 88</a></li>
+                    <li><a href="#">Напишите нам</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Полезные ссылки</h3>
+                <ul>
+                    <li><a href="#">Контакты посольств</a></li>
+                    <li><a href="#">Экстренная ситуация в поездке</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Социальные сети</h3>
+                <div class="social-icons">
+                    <a href="https://vk.com/feed"><img src="D:\icons8-вконтакте-48.png" alt="VK"></a>
+                    <a href="https://ok.ru/"><img src="D:\icons8-одноклассники-в-круге-48.png" alt="Одноклассники"></a>
+                    <a href="https://web.telegram.org/k/"><img src="D:\icons8-логотип-telegram-48.png" alt="Телеграм"></a>
+                </div>
+                <p>&copy; Все права защищены</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        let participantCounter = 1;
+
+        function addParticipantBlock() {
+            participantCounter++;
+            const participantData = document.querySelector('.participant-data');
+            const newParticipantBlock = document.createElement('div');
+            newParticipantBlock.id = 'participant' + participantCounter;
+            newParticipantBlock.innerHTML = `
+                <h3>Данные участника поездки №${participantCounter}</h3>
+                <label for="lastName${participantCounter}">Фамилия:</label>
+                <input type="text" id="lastName${participantCounter}" name="lastName${participantCounter}"><br><br>
+                <label for="firstName${participantCounter}">Имя:</label>
+                <input type="text" id="firstName${participantCounter}" name="firstName${participantCounter}"><br><br>
+                <label for="middleName${participantCounter}">Отчество:</label>
+                <input type="text" id="middleName${participantCounter}" name="middleName${participantCounter}"><br><br>
+                <label for="dob${participantCounter}">Дата рождения:</label>
+                <input type="date" id="dob${participantCounter}" name="dob${participantCounter}"><br><br>
+            `;
+            participantData.appendChild(newParticipantBlock);
+        }
+    </script>
+</body>
+</html>
+
+
+
